@@ -6,16 +6,15 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
-package com.parse.starter;
+package com.roberterrera.robin;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.parse.Parse;
 import com.parse.ParseAnalytics;
+import com.parse.starter.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -26,11 +25,6 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
 
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
-//    Parse.initialize(new Parse.Configuration.Builder(this)
-//            .applicationId("@string/parse_app_id")
-//            .server("http://YOUR_PARSE_SERVER:1337/parse")
-//            .build()
-//    );
   }
 
   @Override
